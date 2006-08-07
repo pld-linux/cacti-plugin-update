@@ -3,13 +3,12 @@
 Summary:	Plugin for Cacti - Update
 Summary(pl):	Wtyczka do Cacti - Update
 Name:		cacti-plugin-update
-Version:	0.2
+Version:	0.3
 Release:	0.1
 License:	GPL v2
 Group:		Applications/WWW
-#!!!!problem with version
-Source0:	http://download.cactiusers.org/downloads/%{namesrc}.tar.gz
-# Source0-md5:	02ca51dee355d671cf61a4421bb7f69c
+Source0:	http://cactiusers.net/downloads/plugins/%{namesrc}-%{version}.tar.gz
+# Source0-md5:	eb7964ce058ad46dad6b94ad21b8eb22
 URL:		http://www.cactiusers.org/
 BuildRequires:	rpm-perlprov
 Requires:	cacti
