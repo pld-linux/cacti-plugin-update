@@ -1,7 +1,7 @@
 %define		namesrc	update
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - Update
-Summary(pl):	Wtyczka do Cacti - Update
+Summary(pl.UTF-8):   Wtyczka do Cacti - Update
 Name:		cacti-plugin-update
 Version:	0.3
 Release:	0.1
@@ -23,8 +23,8 @@ plugin versions. It will also check for Updates to Cacti, the Plugin
 Architecture, and your Plugins and will alert you when it finds new
 versions.
 
-%description -l pl
-To jest wtyczka "administracyjna" pomagaj±ca ¶ledziæ wersje wszystkich
+%description -l pl.UTF-8
+To jest wtyczka "administracyjna" pomagajÄ…ca Å›ledziÄ‡ wersje wszystkich
 posiadanych wtyczek. Ponadto sprawdza uaktualnienia do Cacti,
 architektury wtyczek oraz samych wtyczek i ostrzega, kiedy znajdzie
 nowe wersje.
