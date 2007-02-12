@@ -1,7 +1,7 @@
 %define		namesrc	update
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - Update
-Summary(pl.UTF-8):   Wtyczka do Cacti - Update
+Summary(pl.UTF-8):	Wtyczka do Cacti - Update
 Name:		cacti-plugin-update
 Version:	0.3
 Release:	0.1
