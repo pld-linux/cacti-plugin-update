@@ -1,4 +1,4 @@
-%define		namesrc	update
+%define		plugin	update
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - Update
 Summary(pl.UTF-8):	Wtyczka do Cacti - Update
@@ -7,7 +7,7 @@ Version:	0.4
 Release:	1
 License:	GPL v2
 Group:		Applications/WWW
-Source0:	http://mirror.cactiusers.org/downloads/plugins//%{namesrc}-%{version}.zip
+Source0:	http://mirror.cactiusers.org/downloads/plugins//%{plugin}-%{version}.zip
 # Source0-md5:	e594f4fd5ac9d35faac5fa5cdebe043e
 URL:		http://www.cactiusers.org/
 BuildRequires:	rpm-perlprov
@@ -15,7 +15,8 @@ Requires:	cacti
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		webcactipluginroot /usr/share/cacti/plugins/%{namesrc}
+%define		cactidir		/usr/share/cacti
+%define		plugindir		%{cactidir}/plugins/%{plugin}
 
 %description
 It's an "administrative" plugin to help you keep track of all your
@@ -34,8 +35,8 @@ nowe wersje.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{webcactipluginroot}
-cp -a * $RPM_BUILD_ROOT%{webcactipluginroot}
+install -d $RPM_BUILD_ROOT%{plugindir}
+cp -a . $RPM_BUILD_ROOT%{plugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{webcactipluginroot}
+%{plugindir}
