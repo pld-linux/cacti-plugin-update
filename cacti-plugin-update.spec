@@ -4,11 +4,12 @@ Summary:	Plugin for Cacti - Update
 Summary(pl.UTF-8):	Wtyczka do Cacti - Update
 Name:		cacti-plugin-update
 Version:	0.4
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://mirror.cactiusers.org/downloads/plugins//%{plugin}-%{version}.zip
 # Source0-md5:	e594f4fd5ac9d35faac5fa5cdebe043e
+Patch0:		%{name}-adodb.patch
 URL:		http://www.cactiusers.org/
 BuildRequires:	rpm-perlprov
 Requires:	cacti
@@ -32,6 +33,7 @@ nowe wersje.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
