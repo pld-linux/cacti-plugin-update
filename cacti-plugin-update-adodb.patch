@@ -1,0 +1,12 @@
+diff -urN cacti-plugin-update-0.4.orig/setup.php cacti-plugin-update-0.4/setup.php
+--- cacti-plugin-update-0.4.orig/setup.php	2007-10-25 00:22:28.000000000 +0200
++++ cacti-plugin-update-0.4/setup.php	2009-02-17 11:16:13.000000000 +0100
+@@ -130,7 +130,7 @@
+ function update_setup_table () {
+ 	global $config, $database_default;
+ 
+-	include_once($config["library_path"] . "/adodb/adodb.inc.php");
++	include_once("/usr/share/php/adodb/adodb.inc.php");
+ 	include_once($config["library_path"] . "/database.php");
+ 	$sql = "show tables from `" . $database_default . "`";
+ 
