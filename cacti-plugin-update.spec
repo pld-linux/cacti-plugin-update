@@ -12,6 +12,7 @@ Source0:	http://mirror.cactiusers.org/downloads/plugins//%{plugin}-%{version}.zi
 Patch0:		%{name}-adodb.patch
 URL:		http://www.cactiusers.org/
 BuildRequires:	rpm-perlprov
+BuildRequires:	unzip
 Requires:	cacti
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
